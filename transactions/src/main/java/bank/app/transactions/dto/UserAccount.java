@@ -1,10 +1,18 @@
 package bank.app.transactions.dto;
 
-import jakarta.persistence.Id;
-import lombok.Data;
 
-@jakarta.persistence.Entity
+import java.sql.Date;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserAccount {
 	@Id
 	@jakarta.persistence.GeneratedValue
@@ -16,6 +24,11 @@ public class UserAccount {
 	private String address;
 	private String acType;
 	private String password;
+	private String bankName;
+	private String ifsc;
+	private Date createdOn;
+	private Date modifiedOn;
+	private String modifiedBy;
 	
-
+	
 }

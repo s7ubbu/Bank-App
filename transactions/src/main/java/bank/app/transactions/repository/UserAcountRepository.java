@@ -10,8 +10,9 @@ import org.springframework.stereotype.Repository;
 import bank.app.transactions.dto.UserAccount;
 
 @Repository
-public interface BankRepository extends JpaRepository<UserAccount, Integer>{
+public interface UserAcountRepository extends JpaRepository<UserAccount, Integer>{
 	public UserAccount save(UserAccount acc);
 	public List<UserAccount> findAll();
+	public UserAccount findByAccountNumber(Integer acNo);
 	
 }

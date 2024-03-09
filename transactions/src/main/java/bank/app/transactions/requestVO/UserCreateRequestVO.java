@@ -17,8 +17,5 @@ public class UserCreateRequestVO {
 	private String address;
 	private String acType;
 
-	
-	
-	
 
 }
